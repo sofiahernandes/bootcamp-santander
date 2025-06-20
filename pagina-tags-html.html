@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumos do Modulo 1 - Lab Project</title>
+    <style>
+      body {
+         margin: 0;
+      }
+      div {
+         padding: 60px 40px 0px 60px;
+         margin: 0;
+      }
+      header {
+         text-align: center;
+         justify-content: center;
+         background-color: rgb(224, 233, 255);
+         width: 100%;
+         margin: 0;
+         padding: 40px 0 10px 0;;
+      }
+      header p {
+         width: 100%;
+         text-align: center;
+         justify-content: center;
+      }
+      h1 {
+         margin-bottom: 5px;
+      }
+      h2 {
+         margin: 0;
+         text-decoration: underline;
+         text-underline-offset: 0.2em;
+      }
+      p {
+         text-align: justify;
+         font-size: 1.2em;
+         line-height: 1.15;
+         width: 80%;
+      }
+      ul li {
+         text-align: justify;
+         font-size: 1.2em;
+         line-height: 1.6;
+         width: 80%;
+      }
+      code {
+         display: block;
+         width: fit-content;
+         background-color: rgb(231, 231, 231);
+         margin: 5px;
+         font-size: 1.1em;
+         padding: 5px;
+         border-radius: 5px;
+      }
+      a {
+         color: black;
+         text-decoration: underline;
+         text-underline-offset: 0.1em;
+      }
+      a:hover {
+         color: rgb(59, 59, 59);
+         text-underline-offset: 0.2em;
+      }
+      h3 a {
+         text-decoration: none;
+         color:rgb(59, 59, 59);
+      }
+      hr {
+         margin-bottom: 40px;
+         border: none;
+      }
+    </style>
+</head>
+<body>
+    <header>
+      <h1>Resumos do Modulo 1</h1>
+      <h2>Primeiros Passos com HTML</h2>
+      <p>Por Sofia Botechia Hernandes</p>
+      <hr />
+    </header>
+
+    <div>
+      <h3 id="#indice">Tópicos mais relevantes</h3>
+      <ul>
+         <li><a href="#tags">Tags Principais (Estrutura Básica)</a></li>
+         <li><a href="#estruturas">Estruturas de dados (Forms, Listas e Tabelas)</a></li>
+         <li><a href="#semantica">HTML Semantico e Acessibilidade</a></li>
+         <li><a href="#links">Links de Referências</a></li>
+      </ul>
+      <hr />
+
+      <main>
+         <section id="#tags">
+            <h3>Tags Principais (Estrutura Básica) <a href="#indice">↑</a></h3>
+            <p>O HTML é uma <strong>Linguagem de Marcação</strong>, ou seja, é um <strong>conjunto de tags</strong> (marcações), as quais exercem funções estruturais dentro das Aplicações Web. Nesse contexto, algumas dessas tags se destacam por sua alta taxa de utilização. Entre estas, estão:</p>
+            <ul>
+               <li>&lt;h1&gt; a &lt;h6&gt; – Cabeçalhos de diferentes níveis, do mais importante (&lt;h1&gt;) ao menos importante (&lt;h6&gt;).</li>
+               <li>&lt;p&gt; – Define um parágrafo de texto.</li>
+               <li>&lt;strong&gt; – Dá <strong>ênfase forte</strong> ao texto (geralmente em negrito).</li>
+               <li>&lt;i&gt; – Aplica estilo <i>itálico</i> ao texto.</li>
+               <li>&lt;u&gt; – Aplica <u>sublinhado</u> ao texto.</li>
+               <li>&lt;small&gt; – Exibe o texto em <small>tamanho reduzido</small>.</li>
+               <li>&lt;mark&gt; – <mark>Destaca</mark> o texto com cor de fundo (geralmente amarelo).</li>
+               <li>&lt;abbr&gt; – Define uma abreviação com significado. Por exemplo:
+                  <br>
+                  <code>&lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt;</code>
+               </li>
+               <li>&lt;ol&gt; – Cria uma lista <strong>ordenada</strong> (numerada).</li>
+               <li>&lt;ul&gt; – Cria uma lista <strong>não ordenada</strong> (com marcadores).</li>
+               <li>&lt;li&gt; – Define um item dentro de listas (&lt;ol&gt; ou &lt;ul&gt;).</li>
+               <li>&lt;a&gt; – Define um <strong>link</strong>:
+                  <br>
+                  &lt;a href="http://dio.me"&gt;Clique aqui&lt;/a&gt;
+               </li>
+               <li>&lt;hr&gt; – Insere uma <strong>linha horizontal</strong> como divisor de seção.</li>
+               <li>&lt;sub&gt; – Texto em <sub>subscrito</sub> (abaixo da linha).</li>
+               <li>&lt;sup&gt; – Texto em <sup>sobrescrito</sup> (acima da linha).</li>
+               <li>&lt;blockquote&gt; – Define uma <strong>citação em bloco (longa)</strong>.</li>
+               <li>&lt;font&gt; – Define fonte, cor e tamanho do texto (obsoleta/"deprecated").</li>
+               <li>&lt;del&gt; – Texto <del>"removido"</del> (riscado).</li>
+            </ul>
+            <hr />
+         </section>
+
+         <section id="#estruturas">
+            <h3>Estruturas de dados (Forms, Listas e Tabelas) <a href="#indice">↑</a></h3>
+            <p>O HTML também permite a criação de estruturas de dados mais complexas, como formulários, listas e tabelas. Essas estruturas são essenciais para a interação do usuário com a aplicação web.</p>
+            <ul>
+               <li><strong>Formulários</strong>: Utilizados para coletar dados do usuário. A tag principal é &lt;form&gt;, que pode conter campos de entrada (&lt;input&gt;), áreas de texto (&lt;textarea&gt;), botões (&lt;button&gt;) e outros elementos interativos.</li>
+               <li><strong>Listas</strong>: Podem ser ordenadas (&lt;ol&gt;) ou não ordenadas (&lt;ul&gt;), com itens definidos por &lt;li&gt;, como mostrado na lista de tags acima. As listas são úteis para organizar informações de forma clara.</li>
+               <li><strong>Tabelas</strong>: Criadas com a tag &lt;table&gt;, contendo linhas (&lt;tr&gt;) e células (&lt;td&gt;). As tabelas são usadas para exibir dados tabulares de maneira estruturada.</li>
+            </ul>
+            <hr />
+         </section>
+
+         <section id="#semantica">
+            <h3>HTML Semantico e Acessibilidade <a href="#indice">↑</a></h3>
+            <p>O HTML semântico é uma abordagem que utiliza tags com significado claro e específico, melhorando a compreensão do conteúdo por navegadores e leitores de tela. Isso é crucial para a acessibilidade, permitindo que pessoas com deficiências visuais ou cognitivas acessem o conteúdo de forma mais eficiente.</p>
+            <p>Algumas tags semânticas importantes incluem:</p>
+            <ul>
+               <li>&lt;header&gt; – Define o cabeçalho de uma página ou seção.</li>
+               <li>&lt;nav&gt; – Define uma seção de navegação.</li>
+               <li>&lt;main&gt; – Representa o conteúdo principal da página.</li>
+               <li>&lt;article&gt; – Define um conteúdo independente e auto-contido.</li>
+               <li>&lt;section&gt; – Agrupa conteúdo relacionado dentro de uma página.</li>
+               <li>&lt;aside&gt; – Define conteúdo relacionado, mas não essencial ao conteúdo principal.</li>
+               <li>&lt;footer&gt; – Define o rodapé de uma página ou seção.</li>
+            </ul>
+            <hr />
+         </section>
+      </main>
+
+      <aside>
+         <h3>Links de referências <a href="#indice">↑</a></h3>
+         <ul>
+            <li><a href="http://dio.me">http://dio.me</a></li>
+            <li><a href="http://w3c.org">http://w3c.org</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">https://developer.mozilla.org/pt-BR/docs/Web/HTML</a></li>
+            <li><a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a></li>
+            <li><a href="https://www.freecodecamp.org/portuguese/news/guia-completo-de-html-para-iniciantes/">https://www.freecodecamp.org/portuguese/news/guia-completo-de-html-para-iniciantes/</a></li>
+            <li><a href="https://htmlreference.io/">https://htmlreference.io/</a></li>
+         </ul>
+      </aside>
+    </div>
+</body>
+</html>
