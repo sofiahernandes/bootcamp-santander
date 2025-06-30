@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Landing Page</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Raleway, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: rgb(6, 14, 26);
+    }
+    h1 {
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-image: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%);
+      color: transparent;
+      font-size: 40px;
+      font-weight: 900;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    h2 {
+      color: #3BA1CD;
+      font-weight: 700;
+      font-size: 32px;
+      text-transform: uppercase;
+    }
+    button {
+      position: relative;
+      bottom: 10px;
+      height: 57px;
+      border: 3px solid rgba(49, 168, 221, 1);
+      background-color: transparent;
+      padding: 15px 70px 25px;
+      font-weight: 900;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-align: center;
+      color: rgba(49, 168, 221, 1);
+    }
+    span, a {
+      color: #3BA1CD;
+      text-decoration: none;
+    }
+    hr {
+      border-color: #1572B7;
+      margin: 40px auto;
+    }
+    #transform-world {
+      display: flex;
+      background-image: url("/public/CSS/woman-code.png");
+      height: 260px;
+      background-size: cover;
+      background-position: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+    #transform-world p {
+      display: inline-block;
+      color: #ffffff;
+      font-weight: 900;
+      font-size: 40px;
+      text-shadow: 3px 2px 0px rgba(51, 168, 219, 1);
+      text-transform: lowercase;
+      text-align: left;
+      padding: 0 20%;
+    }
+    #course-content p, #professional-challenges p, footer p {
+      display: inline-block;
+      max-width: 710px;
+      font-weight: 400;
+      font-size: 16px;
+      color: #ffffff;
+      margin: 0 10px;
+    }
+    #professional-challenges h2 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 100%;
+      letter-spacing: 4px;
+      text-align: center;
+      padding-top: 40px;
+    }
+    .banner {
+      background-image: url("/public/CSS/banner.png");
+      padding-top: 60px;
+    }
+    .logo {
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.2);
+      width: 268px;
+      height: 268px;
+      border-radius: 50%;
+      position: relative;
+    }
+    .logo img {
+      margin-top: 25px;
+      max-width: 80%;
+    }
+    .banner-content {
+      padding: 0 20px;
+    }
+    .banner-content p {
+      display: inline-block;
+      max-width: 510px;
+      font-weight: 400;
+      font-size: 20px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .modules-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin: 15px 0;
+      padding: 0 20px;
+    }
+    .module {
+      max-width: 535px;
+      width: 100%;
+      padding: 16px 0;
+      border: 1px solid #3BA1CD;
+      border-radius: 57px;
+      background-color: rgba(37, 37, 37, 1);
+      color: #ffffff;
+    }
+    footer {
+      padding: 40px 20px;
+    }
+    footer img {
+      max-width: 90%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      button {
+        padding: 12px 40px 20px;
+        font-size: 14px;
+      }
+      #course-content p, #professional-challenges p {
+        font-size: 14px;
+      }
+      #transform-world p {
+        font-size: 24px;
+        padding: 0 10%;
+        text-align: center;
+      }
+      .logo {
+        width: 200px;
+        height: 200px;
+      }
+      .banner-content p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="banner">
+    <div class="banner-content">
+      <div class="logo">
+        <img src="/public/CSS/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
+      </div>
+      <h1>Trilha de CSS da DIO</h1>
+      <p>A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
+      <br/>
+      <button type="button" href="#inscrever">Quero me inscrever</button>
+    </div>
+    <hr/>
+  </header>
+
+  <main>
+    <section id="course-content">
+      <h2>O que vou aprender?</h2>
+      <p>
+        Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a 
+        desenvolver sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais.
+      </p>
+      <div class="modules-list">
+        <div class="module">
+          <span>Módulo 01:</span> primeiros passos com CSS
+        </div>
+        <div class="module">
+          <span>Módulo 02:</span> trabalhando com layouts no CSS
+        </div>
+        <div class="module">
+          <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas
+        </div>
+      </div>
+    </section>
+
+    <section id="transform-world">
+      <p>TRANSFORME <br/>O MUNDO <br/>COM A GENTE</p>
+    </section>
+
+    <section id="professional-challenges">
+      <h2>Evolua e encare novos desafios profissionais</h2>
+      <img src="/public/CSS/professional-challenges.png" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
+      <br/>
+      <p>
+        Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas 
+        acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, 
+        além do conhecimento técnico. 
+        A nossa missão é te preparar para que você conecte-se com as melhores oportunidades.
+      </p>
+    </section>
+    <hr/>
+  </main>
+
+  <footer>
+    <img class="dio-logo" src="/public/CSS/dio-logo.png" title="Logotipo DIO com o texto make the change" alt="Logotipo DIO com o texto make the change">
+    <br/>  
+    <p id="#inscrever">Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
+  </footer>
+</body>
+</html>
